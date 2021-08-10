@@ -12,3 +12,7 @@
 >* CSS3
 >* ES6
 >* Reactjs
+
+## Template
+
+PSD taken from: [https://www.freepik.com/free-psd/organic-dog-food-landing-page_7041910.htm](https://www.freepik.com/free-psd/organic-dog-food-landing-page_7041910.htm)
