@@ -1,7 +1,7 @@
 # PROJECT: PET FOOD SHOP LANDING PAGE
 
 Đây là dự án tôi làm để rèn luyện kỹ năng frontend của mình
-This is a project that I practice my front-end skills
+This is a project that I practise my front-end skills
 
 ## Available Scripts
 
