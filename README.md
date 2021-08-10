@@ -1,6 +1,7 @@
-# PET FOOD SHOP LANDING PAGE
+# PROJECT: PET FOOD SHOP LANDING PAGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Đây là dự án tôi làm để rèn luyện kỹ năng frontend của mình
+This is a project that I practice my front-end skills
 
 ## Available Scripts
 
