@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# PET FOOD SHOP LANDING PAGE
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
