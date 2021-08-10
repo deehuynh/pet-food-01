@@ -17,7 +17,7 @@
 
 PSD taken from: [https://www.freepik.com/free-psd/organic-dog-food-landing-page_7041910.htm](https://www.freepik.com/free-psd/organic-dog-food-landing-page_7041910.htm)
 
-![Template image](./src/template/3532884.jpg')
+![Template image](./src/template/3532884.jpg)
 
 ## Analyzing the template
 
