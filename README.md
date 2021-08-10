@@ -1,6 +1,6 @@
 # PROJECT: PET FOOD SHOP LANDING PAGE
 
-This is a project that I practice my front-end skills./
+This is a project that I practice my front-end skills.\
 Practice new skills:\
 >* Convert psd to a react app
 >* BEM
