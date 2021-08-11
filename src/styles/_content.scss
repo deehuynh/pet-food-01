@@ -4,6 +4,32 @@
     background-color: $background-color;
 
     &__button {
-      display: block;
+      display: inline-block;
+      @include font-f-w-s(
+        $montserrat-font, 700, 16.67px,
+        0, white, uppercase
+      );
+      background-color: $button-color;
+      padding: 15px 24px;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    &__title {
+      @include font-f-w-s(
+        $amatic-font, 700, 33.33px,
+        1px, $color-title
+      );
+    }
+
+    &__text {
+      @include font-f-w-s(
+        $montserrat-font,400,20.83px,
+        0, $color-primary
+      );
+    }
+
+    &__col {
+      
     }
 }

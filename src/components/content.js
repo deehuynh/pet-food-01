@@ -1,12 +1,40 @@
 import FoodIMG from '../images/food-box.png'
 import Pet1 from '../images/pet-1.png'
+import Pet2 from '../images/pet-2.png'
 
 export default function Content () {
   return (
     <section className="content">
       <OurStory />
       <Ingredient />
+      <FRow />
     </section>
+  )
+}
+
+function FRow () {
+  return (
+    <div className="content__frow">
+      <Col addclass='content__col--frow1'>
+        <div className="content__title content__title--frow">The perfect start to life</div>
+        <div className="content__text content__text--frow">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </div>
+        <span className="content__button">Learn more</span>
+      </Col>
+
+      <Col addclass='content__col--frow2'>
+        <img src={Pet2} alt="Pet" />
+      </Col>
+    </div>
+  )
+}
+
+function Col (props) {
+  const addclass = props.addclass ? props.addclass : '';
+  return (
+    <div className={`content__col` +` `+ addclass}>{props.children}</div>
   )
 }
 

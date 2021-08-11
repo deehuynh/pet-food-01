@@ -1,4 +1,4 @@
-# PROJECT: PET FOOD SHOP LANDING PAGE
+# MINI-PROJECT: PET FOOD SHOP LANDING PAGE
 
 **This is a project that I practice my front-end skills.**
 
