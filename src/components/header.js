@@ -1,4 +1,4 @@
-
+import LogoIMG from '../images/logo.png'
 
 export default function Header () {
   return (
@@ -23,7 +23,7 @@ function Container (props) {
 
 function TopBar (props) {
   return (
-    <div className="header__top-bar">
+    <div className="header__top-bar header__top-bar--padding">
       {props.children}
     </div>
   )
@@ -32,7 +32,7 @@ function TopBar (props) {
 function Logo () {
   return (
     <span className="header__logo">
-      <img src='' />
+      <img src={LogoIMG} alt='Brand' />
     </span>
   )
 }
@@ -46,15 +46,27 @@ function Nav () {
 }
 
 function Tab (props) {
+  let data = [];
+  tab.forEach((item, index)=>{
+    data.push(<Link key={index} name={item.name} />);
+  });
+
   return (
-    <div className="header__tab">
-      <div className="header__link"></div>
+    <div className="header__tab header__tab--padding">
+      {data}
     </div>
   )
 }
 
 function Link (props) {
   return (
-    <a className="header__link" href="" ></a>
+    <a className="header__link" href="" >{props.name}</a>
   )
 }
+
+const tab = [
+  {name: 'shop for dog'},
+  {name: 'shop for cat'},
+  {name: 'our story'},
+  {name: 'contact us'}
+];

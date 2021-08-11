@@ -1,0 +1,52 @@
+.header {
+  @include size(100%, 657px);
+ 
+  /*  container component  */
+  &__container {
+    @include size(100%);
+    @include hero-img('../images/hero-img.png');
+  }
+
+  /*  top-bar component  */
+  &__top-bar {
+    @include size(100%, auto);
+    @include flex(row, space-between);
+  }
+
+  &__top-bar--padding {
+    padding: {
+      top: 35px;
+      left: 70px;
+      right: 70px;
+    }
+  }
+
+  /*  logo component  */
+  &__logo {
+    @include size(256px, auto);
+  }
+
+  /*  nav component  */
+  &__nav {
+    @include size(auto);
+  }
+
+  &__tab--padding {
+    padding: {
+      top: 30px;
+    }
+  }
+
+  &__link {
+    @include link(uppercase);
+    @include font-f-w-s($montserrat-font, 700);
+    margin: {
+      left: 25px;
+      right: 25px;
+    }
+
+    &:hover {
+      color: #e6f7ff;
+    }
+  }
+}

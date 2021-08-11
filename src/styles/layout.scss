@@ -1,10 +1,17 @@
-// Importing the partials
-@import 'mixin';
-
 // Variables
 $background-color: white;
+$amatic-font: 'Amatic+SC';
+$montserrat-font: 'Montserrat';
+
+// Importing the support package
+@import 'mixin';
+@import 'font';
+
+// Importing the partials
+@import 'header';
 
 // Layout style
 .layout {
   @include size(1440px, auto);
+  @include block_center;
 }

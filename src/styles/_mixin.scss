@@ -1,5 +1,83 @@
+//1. Sizing the block
 @mixin size($width, $height:$width) {
   width: $width;
   height: $height;
 }
 
+//2. align a block to center
+@mixin block_center {
+  margin: { 
+    left: auto;
+    right: auto;
+  }
+}
+
+//3. Background image
+@mixin hero-img (
+  $src, $repeat: no-repeat, $size: cover,
+  $position: center
+) {
+  background: {
+      image: url($src);
+      repeat: $repeat;
+      size: $size;
+      position: $position;
+  }
+}
+
+//4. Flex box
+@mixin flex (
+    $direction: false, $content: false,
+    $item: false, $wrap: false
+) {
+  display: flex;
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $content {
+    justify-content: $content;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+
+  @if $item {
+    align-items: $item;
+  }
+}
+
+//5. Styling the a tag
+@mixin link (
+  $transform: false, $color: false
+) {
+  text-decoration: none;
+
+  @if $color {
+    color: $color;
+  } @else {
+    color: white;
+  }
+
+  @if $transform {
+    text-transform: $transform;
+  }
+}
+
+//6. Font style
+@mixin font_f-w-s (
+  $family: 0, $weight: 0, $size: 0
+) {
+  @if $family != 0 {
+    font-family: $family;
+  }
+
+  @if $weight != 0 {
+    font-weight: $weight;
+  }
+
+  @if $size != 0 {
+    font-size: $size;
+  }
+}
