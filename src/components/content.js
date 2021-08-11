@@ -5,7 +5,21 @@ export default function Content () {
   return (
     <section className="content">
       <OurStory />
+      <Ingredient />
     </section>
+  )
+}
+
+function Ingredient () {
+  return (
+    <div className="content__ingredient">
+      <div className="content__ingredient-t content__ingredient-t--1">Our no. 1 ingredient:</div>
+      <div className="content__ingredient-t content__ingredient-t--2">Real Chicken & Egg</div>
+      <div className="content__ingredient-t content__ingredient-t--3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. 
+      </div>
+    </div>
   )
 }
 

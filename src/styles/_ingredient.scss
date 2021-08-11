@@ -1,0 +1,36 @@
+.content__ingredient {
+  @include size(100%, 350px);
+  @include hero-img('../images/ingredient-img.png');
+  font-family: $amatic-font;
+
+  &-t {
+    text-align: center;
+    color: $background-color;
+    font-weight: 700;
+
+    &--1 {
+      font-size: 33.33px;
+      padding: {
+        top: 70px;
+      };
+      letter-spacing: 4px;
+    }
+
+    &--2 {
+      font-size: 62.5px;
+      margin-top: -10px;
+    }
+
+    &--3 {
+      font-size: 20.83px;
+      font-family: $montserrat-font;
+      font-weight: 400;
+      padding: {
+        top: 35px;
+        left: 20%;
+        right: 20%;
+      };
+    }
+  }
+
+}
