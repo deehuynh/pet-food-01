@@ -1,0 +1,9 @@
+.content {
+    @include size(1440px, auto);
+    @include block_center;
+    background-color: $background-color;
+
+    &__button {
+      display: block;
+    }
+}

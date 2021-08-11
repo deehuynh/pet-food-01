@@ -65,7 +65,7 @@
   /*  Pet brand component  */
   &__pet {
     display: inline-block;
-    @include absolute(0,-48px,-4px,0);
+    @include absolute(0,-30px,-4px,0);
   }
 
   /*  Caption component  */

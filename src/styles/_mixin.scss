@@ -68,7 +68,7 @@
 //6. Font style
 @mixin font_f-w-s (
   $family: 0, $weight: 0, $size: 0,
-  $spacing: 0, $color: 0
+  $spacing: 0, $color: 0, $transform: 0
 ) {
   @if $family != 0 {
     font-family: $family;
@@ -88,6 +88,10 @@
 
   @if $color != 0 {
     color: $color;
+  }
+
+  @if $transform != 0 {
+    text-transform: $transform;
   }
 }
 

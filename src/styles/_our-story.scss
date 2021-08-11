@@ -1,0 +1,57 @@
+.content__our-story {
+  @include size(100%, 500px);
+  @include flex();
+  font-family: $montserrat-font;
+
+  &-title {
+    @include size(40%, auto);
+    @include font-f-w-s(
+      0, 700,
+      41.67px, 0, $color-title
+    );
+
+    position: relative;
+
+    padding: {
+      top: 140px;
+      left: 210px;
+    };
+
+    & p {
+      font-size: 100px;
+      color: $button-color;
+    }
+
+    & div {
+      @include absolute(90px,0,0, 0px);
+    }
+  }
+
+  &-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include size(30%, auto);
+    @include font-f-w-s(0,0,20.83px, 0, $color-primary);
+  
+    & span {
+      @include absolute(360px);
+      @include font-f-w-s(
+        0,600,16.67px,2px,$button-color,uppercase
+      );
+      cursor: pointer;
+    }
+  }
+
+  &-food {
+    @include size(30%, auto);
+    padding: {
+        top: 130px;
+        left: 20px;
+    };
+
+    & img {
+        width: 80%;
+    }
+  }
+}
