@@ -1,5 +1,7 @@
 import LogoIMG from '../images/logo.png'
 import PB from '../images/food-box.png'
+import PetIMG from '../images/pet-img.png'
+import TIMG from '../images/title.png'
 
 export default function Header () {
   return (
@@ -11,6 +13,9 @@ export default function Header () {
         </TopBar>
 
         <ProductBrand />
+        <Caption />
+
+        <Pet />
       </Container>
     </header>
   );
@@ -28,6 +33,23 @@ function TopBar (props) {
   return (
     <div className="header__top-bar header__top-bar--padding">
       {props.children}
+    </div>
+  )
+}
+
+function Caption () {
+  return (
+    <div className="header__caption header__caption--style">
+      Help your Dog Maintain <p>a <span>Healthier Weight</span> with</p>
+      <img src={TIMG} alt='caption' />
+    </div>
+  )
+}
+
+function Pet () {
+  return (
+    <div className="header__pet">
+      <img src={PetIMG} alt='Pet' />
     </div>
   )
 }

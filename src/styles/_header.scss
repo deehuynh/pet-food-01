@@ -1,11 +1,16 @@
 .header {
   @include size(100%, 657px);
-  position: relative;
+  @include hero-img('../images/hero-img.png');
  
   /*  container component  */
   &__container {
-    @include size(100%);
-    @include hero-img('../images/hero-img.png');
+    @include size(1440px, 100%);
+    @include block_center;
+    padding: {
+      left: 70px;
+      right: 70px;
+    }
+    position: relative;
   }
 
   /*  top-bar component  */
@@ -17,8 +22,6 @@
   &__top-bar--padding {
     padding: {
       top: 35px;
-      left: 70px;
-      right: 70px;
     }
   }
 
@@ -40,7 +43,10 @@
 
   &__link {
     @include link(uppercase);
-    @include font-f-w-s($montserrat-font, 700);
+    @include font-f-w-s(
+      $montserrat-font, 600, 16.67px,
+      2px
+    );
     margin: {
       left: 25px;
       right: 25px;
@@ -54,5 +60,36 @@
   /*  Prodcut brand component  */
   &__product-brand {
     @include absolute(245px,0,0,-32px);
+  }
+
+  /*  Pet brand component  */
+  &__pet {
+    display: inline-block;
+    @include absolute(0,-48px,-4px,0);
+  }
+
+  /*  Caption component  */
+  &__caption {
+    margin: {
+      top: 60px;
+      left: 480px;
+    }
+    position: relative;
+
+    &--style {
+      @include font-f-w-s(
+        $amatic-font,
+        400, 41.67px, 0, $color-title
+      );
+    }
+
+    & span {
+      color: $color-bold;
+      font-weight: 700;
+    }
+
+    & img {
+      @include absolute(130px,0,0,-110px);
+    }
   }
 }

@@ -1,7 +1,9 @@
 // Variables
 $background-color: white;
-$amatic-font: 'Amatic+SC';
+$amatic-font: 'Amatic SC';
 $montserrat-font: 'Montserrat';
+$color-title: #452a31;
+$color-bold: #0072a8;
 
 // Importing the support package
 @import 'mixin';
@@ -12,6 +14,5 @@ $montserrat-font: 'Montserrat';
 
 // Layout style
 .layout {
-  @include size(1440px, auto);
-  @include block_center;
+  @include size(100%, auto);
 }
