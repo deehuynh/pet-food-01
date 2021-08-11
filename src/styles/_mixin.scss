@@ -81,3 +81,26 @@
     font-size: $size;
   }
 }
+
+//7. Absolute
+@mixin absolute (
+  $top: 0, $right: 0, $bottom: 0,
+  $left: 0
+) {
+  position: absolute;
+  @if $top != 0 {
+    top: $top;
+  }
+
+  @if $right != 0 {
+    right: $right;
+  }
+
+  @if $bottom != 0 {
+    bottom: $bottom;
+  }
+
+  @if $left != 0 {
+    left: $left;
+  }
+}

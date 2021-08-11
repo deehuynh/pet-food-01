@@ -1,5 +1,6 @@
 .header {
   @include size(100%, 657px);
+  position: relative;
  
   /*  container component  */
   &__container {
@@ -48,5 +49,10 @@
     &:hover {
       color: #e6f7ff;
     }
+  }
+
+  /*  Prodcut brand component  */
+  &__product-brand {
+    @include absolute(245px,0,0,-32px);
   }
 }

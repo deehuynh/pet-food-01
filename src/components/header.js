@@ -1,4 +1,5 @@
 import LogoIMG from '../images/logo.png'
+import PB from '../images/food-box.png'
 
 export default function Header () {
   return (
@@ -8,6 +9,8 @@ export default function Header () {
           <Logo />
           <Nav />
         </TopBar>
+
+        <ProductBrand />
       </Container>
     </header>
   );
@@ -25,6 +28,14 @@ function TopBar (props) {
   return (
     <div className="header__top-bar header__top-bar--padding">
       {props.children}
+    </div>
+  )
+}
+
+function ProductBrand () {
+  return (
+    <div className="header__product-brand">
+      <img src={PB} alt='Brand' />
     </div>
   )
 }
