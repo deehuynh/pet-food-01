@@ -40,9 +40,21 @@ function Logo () {
 function Nav () {
   return (
     <nav className="header__nav">
-      <div className="header__tab">
-        <div className="header__link"></div>
-      </div>
+      <Tab />
     </nav>
+  )
+}
+
+function Tab (props) {
+  return (
+    <div className="header__tab">
+      <div className="header__link"></div>
+    </div>
+  )
+}
+
+function Link (props) {
+  return (
+    <a className="header__link" href="" ></a>
   )
 }

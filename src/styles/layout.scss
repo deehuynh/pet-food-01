@@ -1,0 +1,10 @@
+// Importing the partials
+@import 'mixin';
+
+// Variables
+$background-color: white;
+
+// Layout style
+.layout {
+  @include size(1440px, auto);
+}
