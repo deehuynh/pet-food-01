@@ -2,6 +2,7 @@ import FoodIMG from '../images/food-box.png'
 import Pet1 from '../images/pet-1.png'
 import Pet2 from '../images/pet-2.png'
 import Pet3 from '../images/pet-3.png'
+import SearchIcon from '../icons/search.svg'
 
 export default function Content () {
   return (
@@ -31,6 +32,9 @@ function SRow () {
 
         <div className="content__search-bar">
           <input type="text" placeholder="Search breeds" />
+          <div className="content__search-bar-icon">
+            <img src={SearchIcon} alt="Search" />
+          </div>
         </div>
 
         <ContentButton addclass="content__button--srow">

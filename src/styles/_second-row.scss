@@ -10,6 +10,7 @@
     padding: {
       top: 100px;
       left: 150px;
+      right: 120px;
     }
   }
     
@@ -49,6 +50,33 @@
 .content__search-bar {
   padding: {
     top: 20px;
-    bottom: 40px;
+    bottom: 42px;
   };
+  position: relative;
+
+  & input {
+    @include size(100%, auto);
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #7f7f7f;
+    font-family: $montserrat-font;
+    font-size: 20.83px;
+    color: $color-primary;
+  }
+
+  &-icon {
+    width: 20px;
+    @include absolute(35px,0px);
+    opacity: .5;
+    cursor: pointer;
+
+    & img {
+      width: 100%;
+    }
+  }
 }
