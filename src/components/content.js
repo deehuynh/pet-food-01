@@ -18,7 +18,26 @@ export default function Content () {
 
 function TRow () {
   return (
-    <div className="content__trow"></div>
+    <div className="content__trow">
+      <Col addclass="content__col--trow1">
+        <img src={FoodIMG} alt="Food" />
+      </Col>
+      <Col addclass="content__col--trow2">
+        <ContentTitle addclass="content__title--trow">
+          Find the right food for your dog
+        </ContentTitle>
+
+        <ContentText addclass="content__text--trow">
+          Each formula has been created to deliver nutrition 
+          tailored to your dog's health needs whatever their size, 
+          breed, age, or lifestyle.
+        </ContentText>
+
+        <ContentButton addclass="content__button--trow">
+          View All Products
+        </ContentButton>
+      </Col>
+    </div>
   )
 }
 

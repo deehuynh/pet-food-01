@@ -4,6 +4,11 @@
   height: $height;
 }
 
+@mixin max-size($width, $height:$width) {
+  max-width: $width;
+  height: $height;
+}
+
 //2. align a block to center
 @mixin block_center {
   margin: { 
@@ -27,23 +32,23 @@
 
 //4. Flex box
 @mixin flex (
-    $direction: false, $content: false,
-    $item: false, $wrap: false
+    $direction: 0, $content: 0,
+    $item: 0, $wrap: 0
 ) {
   display: flex;
-  @if $direction {
+  @if $direction != 0 {
     flex-direction: $direction;
   }
 
-  @if $content {
+  @if $content != 0 {
     justify-content: $content;
   }
 
-  @if $wrap {
+  @if $wrap != 0 {
     flex-wrap: $wrap;
   }
 
-  @if $item {
+  @if $item != 0 {
     align-items: $item;
   }
 }

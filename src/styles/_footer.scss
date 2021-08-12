@@ -1,0 +1,32 @@
+.footer {
+  @include size(1440px, 590px);
+  @include block_center;
+  background-color: $background-color;
+
+  &__container {
+    @include max-size(100%, 525px);
+    @include hero-img('../images/footer-img.png');
+    position: relative;
+
+    margin: {
+      left: 55px;
+      right: 55px;
+    };
+  }
+
+  &__copyright {
+    @include absolute(0,350px,20px, 0);
+    color: #010101;
+  }
+
+  &__media {
+    @include size(100px);
+    &-link {
+      @include size(100px);
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

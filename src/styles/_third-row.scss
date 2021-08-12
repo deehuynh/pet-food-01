@@ -1,4 +1,39 @@
 .content__trow {
   @include size(100%, 540px);
   background-color: $background-color;
+  @include flex();
+}
+
+.content__col--trow {
+  &1 {
+    @include size(40%, auto);
+    position: relative;
+
+    & img {
+      width: 65%;
+      @include absolute(110px, 0px);
+    }
+  }
+
+  &2 {
+    @include size(60%, auto);
+    padding: {
+      top: 160px;
+      left: 20px;
+      right: 290px;
+    }
+  }
+}
+
+.content__button--trow {
+  font-size: 12.5px;
+}
+
+.content__text--trow {
+  padding: {
+    top: 20px;
+    bottom: 40px;
+  };
+
+  font-size: 16.67px;
 }
