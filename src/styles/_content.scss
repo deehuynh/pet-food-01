@@ -4,6 +4,10 @@
     background-color: $background-color;
 
     &__button {
+      &:hover {
+        opacity: .8;
+      }
+
       display: inline-block;
       @include font-f-w-s(
         $montserrat-font, 700, 16.67px,
@@ -13,6 +17,7 @@
       padding: 15px 24px;
       user-select: none;
       cursor: pointer;
+      transition: .3s;
     }
 
     &__title {
@@ -27,9 +32,5 @@
         $montserrat-font,400,20.83px,
         0, $color-primary
       );
-    }
-
-    &__col {
-      
     }
 }

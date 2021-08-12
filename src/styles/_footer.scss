@@ -41,21 +41,23 @@
     @include size(200px, 50px);
     @include flex(0,center,center);
     @include absolute(0,30px,10px, 0);
-    &-link {
-      @include size(29px);
-      background-color: $button-color;
-      padding: 5px;
-      border-radius: 40px;
-      margin-left: 10px;
 
-      &:hover {
-        @include size(35px);
-      }
+    &-link {
+      @include size(42px);
+      @include flex(0,center,center);
 
       & img {
+        &:hover {
+          background-color: transparent;
+          border: 1px solid white;
+          @include size(38px);
+        }
         display: inline-block;
-        width: 100%;
-        height: 100%;
+        border-radius: 40px;
+        @include size(29px);
+        background-color: $button-color;
+        padding: 5px;
+        transition: .2s;
       }
     }
   }

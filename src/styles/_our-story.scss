@@ -34,12 +34,17 @@
     @include size(30%, auto);
     @include font-f-w-s(0,0,20.83px, 0, $color-primary);
   
-    & span {
+    & a {
+      @include link;
       @include absolute(360px);
       @include font-f-w-s(
         0,600,16.67px,2px,$button-color,uppercase
       );
       cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

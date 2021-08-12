@@ -165,7 +165,7 @@ function OurStory () {
         sed do eiusmod tempor    incididunt ut labore et dolore magna aliqua.
         Quis ipsum su spendisse ultrices gravida. Risus commodo viverra maec  enas accumsan
         lacus vel facilisis.
-        <span>Read more</span>
+        <a href="">Read more</a>
       </div>
     )
   }
