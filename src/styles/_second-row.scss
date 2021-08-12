@@ -1,0 +1,54 @@
+.content__srow {
+  @include size(100%, 365px);
+  background-color: #f0f0f0;
+  @include flex();
+}
+
+.content__col--srow {
+  &1 {
+    @include size(40%, auto);
+    padding: {
+      top: 100px;
+      left: 150px;
+    }
+  }
+    
+  &2 {
+    @include size(20%, auto);
+    position: relative;
+
+    img {
+      @include absolute(
+        0px, 0px, 0px, 0px, auto
+      );
+    }
+  }
+    
+  &3 {
+    @include size(40%, auto);
+    padding: {
+      top: 100px;
+      left: 50px;
+      right: 100px;
+    }
+  }
+}
+
+.content__text--srow {
+  font-size: 16.67px;
+  padding: {
+    top: 20px;
+    bottom: 40px;
+  };
+}
+
+.content__button--srow {
+  font-size: 12.5px;
+}
+
+.content__search-bar {
+  padding: {
+    top: 20px;
+    bottom: 40px;
+  };
+}

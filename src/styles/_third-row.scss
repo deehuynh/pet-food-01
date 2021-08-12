@@ -1,0 +1,4 @@
+.content__trow {
+  @include size(100%, 540px);
+  background-color: $background-color;
+}
