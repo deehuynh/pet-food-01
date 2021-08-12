@@ -18,3 +18,11 @@
 PSD taken from: [https://www.freepik.com/free-psd/organic-dog-food-landing-page_7041910.htm](https://www.freepik.com/free-psd/organic-dog-food-landing-page_7041910.htm)
 
 ![Template image](./src/template/3532884.jpg)
+
+## No responsive yet
+
+I tried to convert the psd file to a react app with perfect pixel accuracy. So, it's not good for responsive.
+
+## Live website
+
+[https://deehuynh.github.io/pet-food-01/](https://deehuynh.github.io/pet-food-01/)

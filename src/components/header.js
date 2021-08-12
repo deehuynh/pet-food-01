@@ -1,6 +1,6 @@
 import LogoIMG from '../images/logo.png'
 import PB from '../images/food-box.png'
-import PetIMG from '../images/pet-img.png'
+import PetIMG from '../images/pet-img-1.png'
 import TIMG from '../images/title.png'
 
 export default function Header () {

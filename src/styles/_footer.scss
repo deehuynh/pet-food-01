@@ -1,5 +1,5 @@
 .footer {
-  @include size(1440px, 590px);
+  @include max-size(1440px, 590px);
   @include block_center;
   background-color: $background-color;
 

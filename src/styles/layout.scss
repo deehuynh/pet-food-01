@@ -26,3 +26,11 @@ $color-footer: #ededf0;
 .layout {
   @include size(100%, auto);
 }
+
+.alert {
+  @include max-size(100%, 100vh);
+  @include flex(0,center, center);
+  padding: 0 20px;
+  background-color: white;
+  @include font-f-w-s($montserrat-font,0,20px,0,limegreen);
+}

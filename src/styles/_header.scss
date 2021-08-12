@@ -4,7 +4,7 @@
  
   /*  container component  */
   &__container {
-    @include size(1440px, 100%);
+    @include max-size(1440px, 100%);
     @include block_center;
     padding: {
       left: 70px;
@@ -27,7 +27,7 @@
 
   /*  logo component  */
   &__logo {
-    @include size(256px, auto);
+    @include size(20%, auto);
   }
 
   /*  nav component  */
@@ -59,20 +59,25 @@
 
   /*  Prodcut brand component  */
   &__product-brand {
+    // @include size(auto, auto);
+    @include size(38%, auto);
     @include absolute(245px,0,0,-32px);
+    // @include absolute(37%,0,0,-32px);
   }
 
   /*  Pet brand component  */
   &__pet {
+    @include size(31%, auto);
     display: inline-block;
-    @include absolute(0,-30px,-4px,0);
+    @include absolute(0, 0px,-4px,0);
   }
 
   /*  Caption component  */
   &__caption {
     margin: {
       top: 60px;
-      left: 480px;
+      // left: 480px;
+      left: 36%;
     }
     position: relative;
 
