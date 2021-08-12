@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/pet-food-01/static/css/main.2df2dd5b.chunk.css",
+    "main.js": "/pet-food-01/static/js/main.edfcb538.chunk.js",
+    "main.js.map": "/pet-food-01/static/js/main.edfcb538.chunk.js.map",
+    "runtime-main.js": "/pet-food-01/static/js/runtime-main.b1137d11.js",
+    "runtime-main.js.map": "/pet-food-01/static/js/runtime-main.b1137d11.js.map",
+    "static/js/2.2315eb14.chunk.js": "/pet-food-01/static/js/2.2315eb14.chunk.js",
+    "static/js/2.2315eb14.chunk.js.map": "/pet-food-01/static/js/2.2315eb14.chunk.js.map",
+    "static/js/3.3ce9f55e.chunk.js": "/pet-food-01/static/js/3.3ce9f55e.chunk.js",
+    "static/js/3.3ce9f55e.chunk.js.map": "/pet-food-01/static/js/3.3ce9f55e.chunk.js.map",
+    "index.html": "/pet-food-01/index.html",
+    "static/css/main.2df2dd5b.chunk.css.map": "/pet-food-01/static/css/main.2df2dd5b.chunk.css.map",
+    "static/js/2.2315eb14.chunk.js.LICENSE.txt": "/pet-food-01/static/js/2.2315eb14.chunk.js.LICENSE.txt",
+    "static/media/facebook-f-brands.01a6ce1c.svg": "/pet-food-01/static/media/facebook-f-brands.01a6ce1c.svg",
+    "static/media/food-box.93a777bb.png": "/pet-food-01/static/media/food-box.93a777bb.png",
+    "static/media/layout.scss": "/pet-food-01/static/media/ingredient-img.0694a0ba.png",
+    "static/media/instagram-brands.091b579b.svg": "/pet-food-01/static/media/instagram-brands.091b579b.svg",
+    "static/media/logo.0a8a06ba.png": "/pet-food-01/static/media/logo.0a8a06ba.png",
+    "static/media/pet-1.328b6eea.png": "/pet-food-01/static/media/pet-1.328b6eea.png",
+    "static/media/pet-2.4e9d0c8c.png": "/pet-food-01/static/media/pet-2.4e9d0c8c.png",
+    "static/media/pet-3.609eb2fb.png": "/pet-food-01/static/media/pet-3.609eb2fb.png",
+    "static/media/pet-img-1.aaf09abc.png": "/pet-food-01/static/media/pet-img-1.aaf09abc.png",
+    "static/media/search.46c3b37d.svg": "/pet-food-01/static/media/search.46c3b37d.svg",
+    "static/media/title.641613d6.png": "/pet-food-01/static/media/title.641613d6.png",
+    "static/media/twitter-brands.65521907.svg": "/pet-food-01/static/media/twitter-brands.65521907.svg",
+    "static/media/whatsapp-brands.46d0f0ef.svg": "/pet-food-01/static/media/whatsapp-brands.46d0f0ef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1137d11.js",
+    "static/js/2.2315eb14.chunk.js",
+    "static/css/main.2df2dd5b.chunk.css",
+    "static/js/main.edfcb538.chunk.js"
+  ]
+}
