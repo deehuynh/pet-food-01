@@ -55,18 +55,31 @@
 
 //5. Styling the a tag
 @mixin link (
-  $transform: false, $color: false
+  $transform: 0, $color: 0, $font: 0,
+  $weight: 0, $spacing: 0
 ) {
   text-decoration: none;
 
-  @if $color {
+  @if $color != 0 {
     color: $color;
   } @else {
     color: white;
   }
 
-  @if $transform {
+  @if $transform != 0 {
     text-transform: $transform;
+  }
+
+  @if $font != 0 {
+    font-family: $font;
+  }
+
+  @if $weight != 0 {
+    font-weight: $weight;
+  }
+
+  @if $spacing != 0 {
+    letter-spacing: $spacing;
   }
 }
 

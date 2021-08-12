@@ -8,6 +8,7 @@ export default function Footer () {
   return (
     <footer className="footer">
       <div className="footer__container">
+        <FooterNav />
         <Copyright>
           &copy; Company Name 2020. All rights reserved.
         </Copyright>
@@ -15,6 +16,26 @@ export default function Footer () {
         <Media />
       </div>
     </footer>
+  )
+}
+
+const tab = [
+  {name: 'shop for dog'},
+  {name: 'shop for cat'},
+  {name: 'our story'},
+  {name: 'contact us'}
+];
+
+function FooterNav (props) {
+  let data = [];
+  tab.forEach((item, index)=>{
+    data.push(<a href="" key={index} >{item.name}</a>);
+  });
+
+  return (
+    <div className="footer__nav">
+      {data}
+    </div>
   )
 }
 
@@ -29,9 +50,9 @@ function Media () {
   const links = [];
   SocialMedia.forEach((item, index) => {
     links.push(
-      <span key={index} className="footer__media-link">
+      <a key={index} className="footer__media-link" href="">
         <img src={item.icon} alt="social media" />
-      </span>
+      </a>
     );
   });
 

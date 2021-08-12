@@ -3,6 +3,24 @@
   @include block_center;
   background-color: $background-color;
 
+  &__nav {
+    @include size(450px, auto);
+    @include absolute(0,210px,70px, 0);
+    line-height: 2.5;
+    & a {
+      transition: .2s;
+      &:hover {
+        opacity: 0.5;
+      }
+      display: inline-block;
+      margin-right: 50px;
+      @include link(
+        uppercase, $color-title, $montserrat-font,
+        700, 2px
+      );
+    }
+  }
+
   &__container {
     @include max-size(100%, 525px);
     @include hero-img('../images/footer-img.png');
@@ -20,12 +38,24 @@
   }
 
   &__media {
-    @include size(100px);
+    @include size(200px, 50px);
+    @include flex(0,center,center);
+    @include absolute(0,30px,10px, 0);
     &-link {
-      @include size(100px);
+      @include size(29px);
+      background-color: $button-color;
+      padding: 5px;
+      border-radius: 40px;
+      margin-left: 10px;
+
+      &:hover {
+        @include size(35px);
+      }
 
       & img {
+        display: inline-block;
         width: 100%;
+        height: 100%;
       }
     }
   }
